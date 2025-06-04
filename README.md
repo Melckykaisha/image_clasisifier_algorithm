@@ -30,6 +30,7 @@ The model classifies images into the following 10 categories:
 - **Streamlit** – to create the interactive web app  
 - **Python** – for backend logic  
 - **NumPy & PIL** – for image preprocessing
+- **HTML,CSS and flask** - for web based
 
 ## 📦 Setup Instructions
 
