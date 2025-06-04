@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CIFAR-10 Image Classifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script>
+        // Preview selected image
+        function previewImage(event) {
+            const output = document.getElementById('preview');
+            output.src = URL.createObjectURL(event.target.files[0]);
+            output.style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <!-- Top Navigation -->
+    <div class="navbar">
+        <div class="nav-left">CIFAR-10 Classifier</div>
+        <div class="nav-right">
+            <a href="https://github.com/Melckykaisha" target="_blank">GitHub</a>
+            <a href="#about">About</a>
+        </div>
+    </div>
+
+    <!-- Logo -->
+    <img src="{{ url_for('static', filename='MK.jpg') }}" alt="Logo" class="logo">
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About This Project</h2>
+        <p>This web app allows users to upload images and classify them into one of the 10 CIFAR-10 categories using a trained Convolutional Neural Network. It's built using Python, Flask, and TensorFlow.</p>
+    </section>
+
+    <!-- Upload Form -->
+    <div class="form-container">
+        <h2>Upload an Image to Classify</h2>
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <div class="image-frame">
+                <input type="file" name="image" accept="image/*" required onchange="previewImage(event)">
+                <img id="preview" src="#" alt="Image Preview" style="display:none;" />
+            </div>
+            <button type="submit">Classify</button>
+        </form>
+    </div>
+</body>
+</html>

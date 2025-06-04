@@ -1,0 +1,91 @@
+/* Apply Times New Roman font globally */
+body {
+    font-family: 'Times New Roman', serif;
+    background: #f4f6f9;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* About section */
+.about {
+    padding: 40px;
+    background-color: #ffffff;
+    margin: 30px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+/* Form styling */
+.form-container {
+    margin-top: 30px;
+}
+
+form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.image-frame {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 25px;
+    font-size: 16px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+.result-box {
+    margin: 60px auto;
+    background: white;
+    padding: 30px;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.logo {
+    width: 80px;              /* smaller width */
+    height: auto;             /* keep aspect ratio */
+    margin: 20px auto;
+    display: block;
+    border-radius: 8px;       /* optional: rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);  /* optional: soft shadow */
+}

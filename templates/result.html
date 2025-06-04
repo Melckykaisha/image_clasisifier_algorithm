@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-left">CIFAR-10 Classifier</div>
+        <div class="nav-right">
+            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+            <a href="/">Home</a>
+        </div>
+    </div>
+
+    <div class="result-box">
+        <h2>Prediction Result</h2>
+        <p><strong>Predicted Class:</strong> {{ label }}</p>
+        <p><strong>Confidence:</strong> {{ confidence }}%</p>
+        <a href="/"><button>Try Another Image</button></a>
+    </div>
+</body>
+</html>
